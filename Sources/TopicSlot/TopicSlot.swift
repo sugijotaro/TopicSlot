@@ -54,7 +54,8 @@ public struct TopicSlotApp: View {
     }
 
     private func spinTopic() {
-        if let randomTopic = topics.randomElement() {
+        let availableTopics = topics.filter { $0 != currentTopic }
+        if let randomTopic = availableTopics.randomElement() {
             withAnimation(.spring()) {
                 currentTopic = randomTopic
             }
