@@ -6,9 +6,16 @@ public struct TopicSlotApp: View {
     public var onTopicSelected: ((String) -> Void)?
 
     private let topics = [
-        "Favorite Food", "Recent Travel", "Hobbies", "Childhood Dream",
-        "Favorite Movie", "Weekend Plans", "Recommended Books", "Music",
-        "Sports", "Tech Trends"
+        String(localized: "Favorite Food"),
+        String(localized: "Recent Travel"),
+        String(localized: "Hobbies"),
+        String(localized: "Childhood Dream"),
+        String(localized: "Favorite Movie"),
+        String(localized: "Weekend Plans"),
+        String(localized: "Recommended Books"),
+        String(localized: "Music"),
+        String(localized: "Sports"),
+        String(localized: "Tech Trends")
     ]
 
     public init(onTopicSelected: ((String) -> Void)? = nil) {

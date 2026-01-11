@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "TopicSlot",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v16)
     ],
